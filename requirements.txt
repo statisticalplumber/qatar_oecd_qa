@@ -1,2 +1,3 @@
 langchain
-plotly 
+plotly_express
+pandas
