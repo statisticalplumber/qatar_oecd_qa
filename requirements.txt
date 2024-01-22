@@ -1,3 +1,4 @@
 langchain
 plotly_express
 pandas
+langchain_openai
