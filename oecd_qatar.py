@@ -23,7 +23,12 @@ st.markdown('''<style>
 
 
 key = st.sidebar.text_input('Enter OpenAI Key to get detailed insights', type='password')
-
+with st.sidebar.container():
+    gif_col = st.columns([2,2])
+    gif_col[0].image('https://raw.githubusercontent.com/tylerjrichards/GPT3-Dataset-Generator-V2/main/Gifs/blue_grey_arrow.gif', width=40)
+    gif_col[1].caption(
+            "No OpenAI API key? Get yours [here!](https://openai.com/blog/api-no-waitlist/)"
+        )
 
 col_header = st.columns([1,1.5,10, 5])
 col_header[1].image('https://wallpapercave.com/wp/wp4214269.png', width=80)
