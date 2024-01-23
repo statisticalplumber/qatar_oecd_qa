@@ -15,6 +15,13 @@ from langchain_openai import ChatOpenAI
 
 st.set_page_config(layout='wide')
 
+st.markdown('''<style>
+[data-testid="baseButton-header"] {
+    display: none;
+}
+</style>''', unsafe_allow_html=True)
+
+
 key = st.sidebar.text_input('Enter OpenAI Key to get detailed insights', type='password')
 
 
